@@ -41,3 +41,17 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+/* Position the headshot at the top right corner of the header */
+#headshot {
+    width: 100px; /* Adjust based on your image size */
+    position: absolute;
+    right: 20px; /* Adjust the right margin based on your preference */
+    top: 10px; /* Adjust the top margin to align it properly within the header */
+}
+
+/* Update header to position elements correctly */
+header {
+    position: relative; /* This makes sure the absolute positioning of the headshot is relative to the header */
+    padding-right: 120px; /* Adjust this to avoid overlapping with the headshot */
+}
