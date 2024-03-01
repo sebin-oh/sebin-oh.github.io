@@ -43,13 +43,17 @@ ul.posts li {
 }
 
 #headshot {
-    width: 200px; /* Adjust based on your image size */
+    width: 200px; /* Increase width as needed */
+    height: auto; /* Setting height to auto maintains the aspect ratio */
     position: absolute;
-    right: 20px; /* Adjust the right margin based on your preference */
-    top: 10px; /* Adjust the top margin to align it properly within the header */
+    right: 20px;
+    top: 10px;
 }
 
 header {
-    position: relative; /* This makes sure the absolute positioning of the headshot is relative to the header */
-    padding-right: 250px; /* Adjust this to avoid overlapping with the headshot */
+    background: #333; /* Background color of the header */
+    color: #fff; /* Text color within the header */
+    padding: 10px 20px; /* Padding inside the header */
+    text-align: center; /* Aligns the text to the center */
+    position: relative; /* Establishes a positioning context for absolutely positioned child elements */
 }
