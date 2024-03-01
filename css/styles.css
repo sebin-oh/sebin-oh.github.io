@@ -52,5 +52,5 @@ ul.posts li {
 
 header {
     position: relative; /* This makes sure the absolute positioning of the headshot is relative to the header */
-    padding-right: 120px; /* Adjust this to avoid overlapping with the headshot */
+    padding-right: 250px; /* Adjust this to avoid overlapping with the headshot */
 }
