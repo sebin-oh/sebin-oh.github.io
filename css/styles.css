@@ -1,43 +1,86 @@
+/* General body styles */
 body {
-    margin: 60px auto;
-    width: 70%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation menu styles */
+nav ul {
+    padding: 0;
     list-style: none;
+    background: #444;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul a:hover {
+    background: #555;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for wit and personality */
+/* Feel free to adjust the color, font, or spacing */
+/* to fit your personal style */
+
+/* Adds a little edge to headers */
+header h1 {
+    font-style: italic;
+}
+
+/* Subtle hover effect for links to add wit */
+a:hover {
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+/* Adjusts font size for a modern look */
+body {
+    font-size: 18px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
+/* Ensures content is not hidden behind the fixed footer */
+body {
+    margin-bottom: 50px;
 }
