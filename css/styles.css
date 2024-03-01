@@ -43,13 +43,13 @@ ul.posts li {
 }
 
 #headshot {
-    width: 80px; /* Adjust based on your image size */
+    width: 150px; /* Adjust based on your image size */
     position: absolute;
-    right: 10px; /* Adjust the right margin based on your preference */
+    right: 20px; /* Adjust the right margin based on your preference */
     top: 10px; /* Adjust the top margin to align it properly within the header */
 }
 
 header {
     position: relative; /* This makes sure the absolute positioning of the headshot is relative to the header */
-    padding-right: 100px; /* Adjust this to avoid overlapping with the headshot */
+    padding-right: 200px; /* Adjust this to avoid overlapping with the headshot */
 }
