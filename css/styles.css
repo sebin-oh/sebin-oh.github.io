@@ -41,13 +41,15 @@ footer {
 }
 
 #headshot {
-    max-width: 100%; /* Ensure the image does not overflow its container */
+    max-width: 200px; /* Adjust max-width as needed */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper alignment */
-    margin: 10px auto; /* Adjust margin for better centering */
+    position: absolute; /* Position the headshot absolutely */
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+    border-radius: 50%; /* Optional: Round the corners for a circular headshot */
 }
 
 header {
     position: relative;
-    padding-right: 0; /* Adjust padding for better alignment */
+    padding-right: 250px; /* Add space for the headshot */
 }
