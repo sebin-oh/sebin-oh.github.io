@@ -1,5 +1,5 @@
 body {
-    margin: 20px auto; /* Adjust margin for better centering */
+    margin: 40px auto; /* Adjust margin for better centering */
     width: 90%; /* Adjust width for better responsiveness */
     max-width: 800px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
