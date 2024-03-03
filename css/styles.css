@@ -25,6 +25,7 @@ section ul li {
 section ul ul li {
     font-size: 18px;
     line-height: 1.2;
+    list-style-type: circle;
 }
 
 a {
