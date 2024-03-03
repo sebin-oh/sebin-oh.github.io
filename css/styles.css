@@ -34,10 +34,15 @@ section ol li {
     margin-bottom: 5px;
 }
 
-a {
+nav ul li a {
     text-decoration: none;
     color: #999;
 }
+
+section ul ul li a {
+    text-decoration: none;
+}
+    
 
 a:hover {
     text-decoration: underline;
