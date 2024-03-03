@@ -16,34 +16,6 @@ nav ul li, footer ul li {
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
-/* section ul {
-  --icon-space: 1.3em;
-  list-style: none;
-  padding: 0;
-}
-
-section ul li {
-  padding-left: var(--icon-space);
-}
-
-section ul li:before {
-  content: "\f00c"; /* FontAwesome Unicode */
-  font-family: FontAwesome;
-  display: inline-block;
-  margin-left: calc( var(--icon-space) * -1 );
-  width: var(--icon-space);
-} */
-
-/* section ul li {
-    margin-left: 3px;
-    list-style-type: square;
-}
-
-section ul ul li {
-    margin-left: 3px;
-    list-style-type: circle;
-} */
-
 a {
     text-decoration: none;
     color: #999;
