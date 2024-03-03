@@ -16,7 +16,7 @@ nav ul li, footer ul li {
     display: inline-block; /* Change to block for better stacking on smaller screens */
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
     margin-left: 20px; /* Add space between navigation items */
-    font-size: 1.2rem; /* Adjust the font size for navigation links */
+    font-size: 2.0rem; /* Adjust the font size for navigation links */
 }
 
 nav ul li:first-child {
