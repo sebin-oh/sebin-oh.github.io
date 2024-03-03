@@ -16,6 +16,22 @@ nav ul li, footer ul li {
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
+nav ul ul {
+    display: none; /* Hide sub-lists by default */
+}
+
+nav ul li:hover > ul {
+    display: block; /* Display sub-lists on hover */
+}
+nav ul ul li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+nav ul ul ul li {
+    margin-left: 20px;
+}
+
 a {
     text-decoration: none;
     color: #999;
