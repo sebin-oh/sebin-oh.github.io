@@ -19,6 +19,7 @@ nav ul li, footer ul li {
 section ul li {
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -57,8 +58,8 @@ section h2 {
     font-size: 24px;
     font-weight: bold;
     color: #333; /* Adjust color as needed */
-    margin-top: 2px;
-    margin-bottom: 1px; /* Add some space below the heading */
+    margin-top: 5px;
+    margin-bottom: 3px; /* Add some space below the heading */
 }
 
 p {
