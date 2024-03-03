@@ -1,5 +1,5 @@
 body {
-    margin: 40px auto; /* Adjust margin for better centering */
+    margin: 60px auto; /* Adjust margin for better centering */
     width: 90%; /* Adjust width for better responsiveness */
     max-width: 800px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
@@ -41,15 +41,13 @@ footer {
 }
 
 #headshot {
-    max-width: 200px; /* Adjust max-width as needed */
+    max-width: 100%; /* Ensure the image does not overflow its container */
     height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Position the headshot absolutely */
-    top: 10px; /* Adjust top position */
-    right: 10px; /* Adjust right position */
-    border-radius: 50%; /* Optional: Round the corners for a circular headshot */
+    display: block; /* Ensure proper alignment */
+    margin: 10px auto; /* Adjust margin for better centering */
 }
 
 header {
     position: relative;
-    padding-right: 250px; /* Add space for the headshot */
+    padding-right: 0; /* Adjust padding for better alignment */
 }
