@@ -4,38 +4,6 @@ body {
     max-width: 800px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
-/* For unordered lists */
-ul {
-    list-style-type: square;
-}
-
-/* For nested unordered lists */
-ul ul {
-    list-style-type: circle;
-    margin-left: 20px;
-}
-
-ul ul ul {
-    list-style-type: circle;
-    margin-left: 40px;
-}
-
-/* For ordered lists */
-ol {
-    list-style-type: decimal; /* Default numbering */
-}
-
-/* For nested ordered lists */
-ol ol {
-    list-style-type: lower-alpha; /* Lowercase alphabetical numbering */
-    margin-left: 20px;
-}
-
-ol ol ol {
-    list-style-type: lower-roman; /* Lowercase Roman numbering */
-    margin-left: 40px;
-}
-
 nav ul, footer ul {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0;
@@ -46,22 +14,6 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: block; /* Change to block for better stacking on smaller screens */
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
-}
-
-nav ul ul {
-    display: none; /* Hide sub-lists by default */
-}
-
-nav ul li:hover > ul {
-    display: block; /* Display sub-lists on hover */
-}
-nav ul ul li {
-    display: block;
-    margin-bottom: 5px;
-}
-
-nav ul ul ul li {
-    margin-left: 20px;
 }
 
 a {
