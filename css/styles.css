@@ -17,12 +17,12 @@ nav ul li, footer ul li {
 }
 
 section ul li {
-    margin-left: 5px;
+    margin-left: 3px;
     list-style-type: square;
 }
 
 section ul ul li {
-    margin-left: 5px;
+    margin-left: 3px;
     list-style-type: circle;
 }
 
