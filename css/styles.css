@@ -37,11 +37,12 @@ section ol li {
 
 nav ul li a {
     text-decoration: none;
-    color: #030303;
+    color: #333;
 }
 
 section ul ul li a {
     text-decoration: none;
+    color: #030303;
 }
     
 
