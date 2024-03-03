@@ -17,13 +17,13 @@ nav ul li, footer ul li {
 }
 
 section ul {
-    margin-left: 10px;
+    margin-left: 5px;
     list-style-type: none;
-    list-style-image: url("graduation-cap.png");
+    list-style-image: url("graduation-cap.jpg");
 }
 
 section ul ul {
-    margin-left: 10px;
+    margin-left: 5px;
     list-style-type: disc;
 }
 
