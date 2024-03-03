@@ -19,10 +19,11 @@ nav ul li, footer ul li {
 section ul {
     margin-left: 5px;
     list-style-type: none;
-    list-style-image: url("../graduation-cap.jpg");
+    list-style-image: linear-gradient(to left bottom, red, blue);
+/*     list-style-image: url("../graduation-cap.jpg"); */
 }
 
-/* Adjust the size of the list marker image */
+/* /* Adjust the size of the list marker image */
 section > ul > li::before {
     content: ""; /* Required for pseudo-element */
     display: inline-block;
@@ -31,7 +32,7 @@ section > ul > li::before {
     background-image: url("../graduation-cap.jpg"); /* Same path as above */
     background-size: cover; /* Adjust background size */
     margin-right: 5px; /* Adjust margin for spacing between marker and text */
-}
+} */
 
 section ul ul {
     margin-left: 5px;
