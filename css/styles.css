@@ -1,7 +1,7 @@
 body {
     margin: 60px auto; /* Adjust margin for better centering */
     width: 90%; /* Adjust width for better responsiveness */
-    max-width: 2000px; /* Add max-width to prevent content from stretching too wide on larger screens */
+    max-width: 1500px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
 nav ul, footer ul {
@@ -9,11 +9,17 @@ nav ul, footer ul {
     padding: 0;
     list-style: none;
     font-weight: bold;
+    float: right; /* Align the entire navigation to the right */
 }
 
 nav ul li, footer ul li {
-    display: block; /* Change to block for better stacking on smaller screens */
+    display: inline-block; /* Change to block for better stacking on smaller screens */
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
+    margin-left: 20px; /* Add space between navigation items */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first navigation item */
 }
 
 section ul li {
