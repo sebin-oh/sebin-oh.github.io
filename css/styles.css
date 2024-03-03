@@ -18,12 +18,12 @@ nav ul li, footer ul li {
 
 section ul {
     margin-left: 20px;
-    list-style-type: sqaure;
+    list-style-type: square;
 }
 
 section ul ul {
     margin-left: 40px;
-    list-style-type: disk;
+    list-style-type: disc;
 }
 
 a {
