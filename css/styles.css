@@ -12,10 +12,12 @@ ul {
 /* For nested unordered lists */
 ul ul {
     list-style-type: circle;
+    margin-left: 20px;
 }
 
 ul ul ul {
     list-style-type: circle;
+    margin-left: 40px;
 }
 
 /* For ordered lists */
@@ -26,10 +28,12 @@ ol {
 /* For nested ordered lists */
 ol ol {
     list-style-type: lower-alpha; /* Lowercase alphabetical numbering */
+    margin-left: 20px;
 }
 
 ol ol ol {
     list-style-type: lower-roman; /* Lowercase Roman numbering */
+    margin-left: 40px;
 }
 
 nav ul, footer ul {
@@ -57,7 +61,7 @@ nav ul ul li {
 }
 
 nav ul ul ul li {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 a {
