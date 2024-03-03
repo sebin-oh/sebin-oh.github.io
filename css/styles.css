@@ -26,11 +26,11 @@ section ul {
 section ul li::before {
     content: ""; /* Required for pseudo-element */
     display: inline-block;
-    width: 20px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
+    width: 2px; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
     background-image: url("../graduation-cap.jpg"); /* Same path as above */
     background-size: cover; /* Adjust background size */
-    margin-right: 5px; /* Adjust margin for spacing between marker and text */
+    margin-right: 1px; /* Adjust margin for spacing between marker and text */
 }
 
 section ul ul {
