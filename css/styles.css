@@ -74,13 +74,13 @@ section h2 {
     font-size: 24px;
     font-weight: bold;
     color: #333; /* Adjust color as needed */
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 5px; /* Add some space below the heading */
 }
 
 p {
-    font-size: 1.2em; /* Adjust font size for better readability */
-    line-height: 1.2em; /* Increase line-height for better readability */
+    font-size: 1.3em; /* Adjust font size for better readability */
+    line-height: 1.3em; /* Increase line-height for better readability */
     color: #333;
 }
 
