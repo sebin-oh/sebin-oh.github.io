@@ -4,6 +4,34 @@ body {
     max-width: 800px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
+/* For unordered lists */
+ul {
+    list-style-type: square;
+}
+
+/* For nested unordered lists */
+ul ul {
+    list-style-type: circle;
+}
+
+ul ul ul {
+    list-style-type: circle;
+}
+
+/* For ordered lists */
+ol {
+    list-style-type: decimal; /* Default numbering */
+}
+
+/* For nested ordered lists */
+ol ol {
+    list-style-type: lower-alpha; /* Lowercase alphabetical numbering */
+}
+
+ol ol ol {
+    list-style-type: lower-roman; /* Lowercase Roman numbering */
+}
+
 nav ul, footer ul {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0;
