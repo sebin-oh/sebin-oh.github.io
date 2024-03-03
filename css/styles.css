@@ -16,10 +16,9 @@ nav ul li, footer ul li {
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
-section ul {
+section ul li {
     margin-left: 5px;
-    list-style-type: none;
-    list-style-image: linear-gradient(to left bottom, white, blue);
+    list-style-type: square;
 }
 
 section ul ul {
