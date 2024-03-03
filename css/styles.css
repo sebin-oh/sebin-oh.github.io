@@ -16,6 +16,16 @@ nav ul li, footer ul li {
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
+section ul li {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+section ul ul li {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
 a {
     text-decoration: none;
     color: #999;
