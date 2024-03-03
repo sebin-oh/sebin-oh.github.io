@@ -31,6 +31,7 @@ section ul ul li {
 section ol li {
     font-size: 18px;
     line-height: 1.0;
+    margin-bottom: 5px;
 }
 
 a {
