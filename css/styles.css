@@ -58,8 +58,8 @@ section h2 {
     font-size: 24px;
     font-weight: bold;
     color: #333; /* Adjust color as needed */
-    margin-top: 5px;
-    margin-bottom: 3px; /* Add some space below the heading */
+    margin-top: 10px;
+    margin-bottom: 5px; /* Add some space below the heading */
 }
 
 p {
