@@ -16,7 +16,7 @@ nav ul li, footer ul li {
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
-section ul {
+/* section ul {
   --icon-space: 1.3em;
   list-style: none;
   padding: 0;
@@ -32,7 +32,7 @@ section ul li:before {
   display: inline-block;
   margin-left: calc( var(--icon-space) * -1 );
   width: var(--icon-space);
-}
+} */
 
 /* section ul li {
     margin-left: 3px;
