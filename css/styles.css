@@ -24,20 +24,20 @@ nav ul li:first-child {
 }
 
 section ul li {
-    font-size: 20px;
+    font-size: 1.6rem;
     line-height: 1.2;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 section ul ul li {
-    font-size: 18px;
+    font-size: 1.4rem;
     line-height: 1.0;
     list-style-type: disc;
 }
 
 section ol li {
-    font-size: 18px;
+    font-size: 1.4rem;
     line-height: 1.0;
     margin-bottom: 5px;
 }
@@ -71,7 +71,7 @@ h1 {
 
 section h2 {
     font-family: Arial, sans-serif;
-    font-size: 24px;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #333; /* Adjust color as needed */
     margin-top: 20px;
