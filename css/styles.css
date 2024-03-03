@@ -16,12 +16,12 @@ nav ul li, footer ul li {
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
-section u1 li {
+section u1 {
     margin-left: 20px;
     list-style-type: sqaure;
 }
 
-section u1 u1 li {
+section u1 u1 {
     margin-left: 40px;
     list-style-type: disk;
 }
