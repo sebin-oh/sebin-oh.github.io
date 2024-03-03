@@ -21,7 +21,7 @@ section ul li {
     list-style-type: square;
 }
 
-section ul ul {
+section ul ul li {
     margin-left: 5px;
     list-style-type: disc;
 }
