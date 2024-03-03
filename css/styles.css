@@ -16,21 +16,21 @@ nav ul li, footer ul li {
     margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
-section ul {
+section > ul {
     margin-left: 5px;
     list-style-type: none;
     list-style-image: url("../graduation-cap.jpg");
 }
 
 /* Adjust the size of the list marker image */
-section ul li::before {
+section > ul > li::before {
     content: ""; /* Required for pseudo-element */
     display: inline-block;
-    width: 2px; /* Adjust width as needed */
-    height: 2px; /* Adjust height as needed */
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
     background-image: url("../graduation-cap.jpg"); /* Same path as above */
     background-size: cover; /* Adjust background size */
-    margin-right: 1px; /* Adjust margin for spacing between marker and text */
+    margin-right: 5px; /* Adjust margin for spacing between marker and text */
 }
 
 section ul ul {
