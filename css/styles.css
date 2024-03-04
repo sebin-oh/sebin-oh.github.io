@@ -80,12 +80,16 @@ header {
 
     nav ul {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     nav ul li {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    nav ul li:first-child {
+        margin-left: 0;
     }
 
     .header-headshot {
@@ -112,7 +116,7 @@ nav ul, footer ul {
 
 nav ul li {
     margin-right: 20px;
-    font-size: 1.5rem; /* Adjusted for better readability */
+    font-size: 1.8rem; /* Adjusted for better readability */
 }
 
 nav ul li:first-child {
@@ -120,7 +124,9 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-    color: #999;
+    text-decoration: none;
+    color: #999;    
+    font-size: 1.8rem;
 }
 
 a:hover {
