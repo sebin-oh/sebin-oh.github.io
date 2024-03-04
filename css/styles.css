@@ -108,7 +108,6 @@ header {
     /* Adjust navigation menu for mobile */
     nav ul {
         flex-direction: column; /* Stack nav items vertically */
-        align-items: left; /* Center-align nav items */
     }
 
     nav ul li {
@@ -164,6 +163,7 @@ nav ul, footer ul {
     font-weight: bold;
     text-align: left; /* Align the entire navigation to the center */
     display: flex; /* Align nav items in a row by default */
+    margin-right: 10px;
 }
 
 nav ul li, footer ul li {
