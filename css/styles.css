@@ -110,7 +110,7 @@ header {
     }
 
     .header-headshot {
-        width: 60px; /* Smaller size for mobile */
+        width: 100px; /* Smaller size for mobile */
         height: auto;
     }
 
@@ -174,6 +174,7 @@ section ul ul li {
     font-size: 1.1rem;
     line-height: 1.2;
     list-style-type: disc;
+    margin: 0;
 }
 
 section ul a, section ul ul a {
