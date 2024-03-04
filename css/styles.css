@@ -20,6 +20,25 @@ body {
     align-items: baseline;
 }
 
+#news-updates {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#news-updates h2 {
+    color: #333; /* Dark grey color */
+}
+
+#news-updates article {
+    margin-bottom: 15px;
+}
+
+#news-updates .date {
+    font-style: italic;
+    color: #666;
+}
+
 .social-link {
     color: gray; /* Change the icon color to gray */
     text-decoration: none;
