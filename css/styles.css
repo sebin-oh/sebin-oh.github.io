@@ -155,19 +155,31 @@ section ul {
     line-height: 1.2;
     margin-top: 5px;
     margin-bottom: 10px;
+    list-style-type: none;
 }
 
 section ul ul {
     font-family: Arial, sans-serif;
     font-size: 1.1rem;
     line-height: 1.0;
+    list-style-type: disc;
 }
 
+section ul a, section ul ul a {
+    text-decoration: none;
+    color: black;
+}    
+
 section ol {
-    font-family: 'Georgia', serif; /* Change 'Georgia' to your preferred font */
+    font-family: 'Times New Roman', serif; /* Change 'Georgia' to your preferred font */
     font-size: 1.2rem;
     line-height: 1.2;
     margin-bottom: 10px;
+}
+
+section ol a {
+    text-decoration: none;
+    color: black;
 }
 
 footer {
