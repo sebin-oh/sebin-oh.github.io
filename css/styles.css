@@ -64,7 +64,16 @@ section ul ul li a {
     text-decoration: none;
     color: #030303;
 }
-    
+
+section ol li a {
+    text-decoration: none;
+    color: #030303;
+}
+
+.social-link {
+    color: #999; 
+    text-decoration: none; /* To remove the underline */
+}
 
 a:hover {
     text-decoration: underline;
