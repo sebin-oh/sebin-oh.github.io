@@ -4,6 +4,16 @@ body {
     max-width: 1500px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
+.header-content h1 {
+    font-size: 2.5em; /* Adjust this value to change the size of your name */
+    margin: 0; /* Removes any default margin */
+}
+
+.header-content h1 a {
+    color: black; /* Ensures the link color is black */
+    text-decoration: none; /* Removes underline from the link */
+}
+
 .header-content {
     display: flex;
     align-items: baseline;
@@ -16,7 +26,7 @@ body {
 }
 
 .custom-icon-size i {
-    font-size: 0.75em; /* Adjust this value to make the icons smaller or larger */
+    font-size: 1.0em; /* Adjust this value to make the icons smaller or larger */
 }
 
 nav ul, footer ul {
