@@ -10,12 +10,6 @@ body {
     margin: 0; /* Removes any default margin */
 }
 
-.header-content p {
-    font-family: Arial, sans-serif;
-    font-size: 1.5em; /* Adjust this value to change the size of your name */
-    margin: 0; /* Removes any default margin */
-}
-
 .header-content h1 a {
     color: black; /* Ensures the link color is black */
     text-decoration: none; /* Removes underline from the link */
@@ -120,6 +114,7 @@ section h2 {
 }
 
 p {
+    font-family: Arial, sans-serif;
     font-size: 1.3em; /* Adjust font size for better readability */
     line-height: 1.3em; /* Increase line-height for better readability */
     color: #333;
