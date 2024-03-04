@@ -76,7 +76,7 @@ header {
 }
 
 .image-gallery img {
-    width: 70%;
+    width: 60%;
     height: auto;
     display: block; /* Remove default inline spacing */
 }
