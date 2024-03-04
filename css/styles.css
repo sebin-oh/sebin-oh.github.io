@@ -16,7 +16,7 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: baseline; /* Align items vertically in the center */
 }
 
 .header-headshot {
