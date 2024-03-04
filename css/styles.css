@@ -61,8 +61,58 @@ header {
 }
 
 #news-updates a {
+    color: black;
     text-decoration: none;
-    font-size: 0.5rem;
+    font-size: 1.0rem;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slides {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides .slide {
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.6s ease;
+    opacity: 0;
+}
+
+.slides input {
+    display: none;
+}
+
+.slides input:checked + .manual-button + .slide {
+    opacity: 1;
+}
+
+.manual-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.manual-button:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 5px;
+    transition: background-color 0.6s ease;
+}
+
+input:checked + .manual-button:before {
+    background-color: #fff;
 }
 
 .social-link {
