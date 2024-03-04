@@ -68,6 +68,19 @@ header {
     font-size: 1.0rem;
 }
 
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; /* Space between images */
+    padding: 10px; /* Padding around the gallery */
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove default inline spacing */
+}
+
 .social-link {
     color: #01356D; /* Change the icon color to gray */
     text-decoration: none;
