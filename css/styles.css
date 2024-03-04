@@ -11,6 +11,12 @@ header {
     padding-right: 0; /* Adjust padding for better alignment */
 }
 
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the flex container */
+}
+
 .header-content div {
     margin: 0;
 }
@@ -26,9 +32,8 @@ header {
     text-decoration: none; /* Removes underline from the link */
 }
 
-.header-content {
-    display: flex;
-    align-items: baseline;
+.header-content p {
+    margin-top: 20px; /* Adjust this value as needed to push the text down */
 }
 
 #news-updates {
@@ -65,7 +70,7 @@ nav ul, footer ul {
     padding: 0;
     list-style: none;
     font-weight: bold;
-    text-align: center; /* Align the entire navigation to the center */
+    text-align: left; /* Align the entire navigation to the center */
 }
 
 nav ul li, footer ul li {
