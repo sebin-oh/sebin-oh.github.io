@@ -150,6 +150,7 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     text-align: left; /* Align the entire navigation to the center */
+    display: flex; /* Align nav items in a row by default */
 }
 
 nav ul li, footer ul li {
@@ -161,17 +162,6 @@ nav ul li, footer ul li {
 
 nav ul li:first-child {
     margin-left: 0; /* Remove margin from the first navigation item */
-}
-
-nav ul {
-    display: flex; /* Align nav items in a row by default */
-    padding: 0;
-    list-style: none;
-    font-weight: bold;
-}
-
-nav ul li {
-    margin-right: 20px; /* Space out nav items */
 }
 
 section ul li {
