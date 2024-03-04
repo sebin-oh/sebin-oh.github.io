@@ -5,16 +5,13 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
     position: relative;
     padding-right: 0; /* Adjust padding for better alignment */
 }
 
 .header-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the start of the flex container */
+    align-items: baseline;
 }
 
 .header-content div {
@@ -30,10 +27,6 @@ header {
 .header-content h1 a {
     color: black; /* Ensures the link color is black */
     text-decoration: none; /* Removes underline from the link */
-}
-
-.header-content p {
-    margin-top: 20px; /* Adjust this value as needed to push the text down */
 }
 
 #news-updates {
