@@ -226,7 +226,7 @@ nav ul, footer ul {
     padding: 0;
     list-style: none;
     font-weight: bold;
-    text-align: center; /* Align the entire navigation to the center */
+    text-align: left; /* Align the entire navigation to the center */
 }
 
 nav ul li, footer ul li {
