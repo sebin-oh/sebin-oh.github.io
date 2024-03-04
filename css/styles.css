@@ -173,9 +173,9 @@ nav ul li, footer ul li {
     font-size: 2rem; /* Adjust the font size for navigation links */
 }
 
-/* nav ul li:first-child {
+nav ul li:first-child {
     margin-left: 0; /* Remove margin from the first navigation item */
-} */
+}
 
 section ul li {
     font-size: 1.3rem;
