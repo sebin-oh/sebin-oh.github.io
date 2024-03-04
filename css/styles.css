@@ -4,14 +4,27 @@ body {
     max-width: 1500px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
-header {
+/* header {
     position: relative;
     padding-right: 0; /* Adjust padding for better alignment */
+} */
+
+/* .header-content {
+    display: flex;
+    align-items: baseline;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* This will make the child elements fill the header height */
 }
 
 .header-content {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text and icons to the start */
 }
 
 .header-content div {
@@ -151,6 +164,7 @@ footer {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure proper alignment */
     margin: 10px auto; /* Adjust margin for better centering */
+    align-self: center; /* Align image vertically */
 }
 
 /* For tablets */
