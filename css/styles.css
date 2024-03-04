@@ -4,6 +4,16 @@ body {
     max-width: 1500px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This will vertically center align items in the header */
+}
+
+.header-content div {
+    margin: 0;
+}
+
 .header-content h1 {
     font-family: Arial, sans-serif;
     font-size: 3.0em; /* Adjust this value to change the size of your name */
@@ -18,6 +28,7 @@ body {
 .header-content {
     display: flex;
     align-items: baseline;
+    flex-direction: column; /* Aligns the content and social links vertically */
 }
 
 #news-updates {
@@ -98,13 +109,6 @@ nav ul li a {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    /* Adjust font size for smaller screens */
-    nav ul li a {
-        font-size: 1.3rem; /* Adjust font size for smaller screens */
-    }
-}
-
 section ul ul li a {
     text-decoration: none;
     color: #030303;
@@ -154,4 +158,24 @@ footer {
 header {
     position: relative;
     padding-right: 0; /* Adjust padding for better alignment */
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    #headshot {
+        max-width: 150px; /* Smaller size for smaller devices */
+    }
+    nav ul li a {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    #headshot {
+        max-width: 100px; /* Even smaller size for mobile phones */
+    }
+    nav ul li a {
+        font-size: 1.3rem; /* Adjust font size for smaller screens */
+    }
 }
