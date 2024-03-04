@@ -9,9 +9,22 @@ header {
     padding-right: 0; /* Adjust padding for better alignment */
 }
 
-.header-content {
+/* .header-content {
     display: flex;
     align-items: baseline;
+} */
+
+.header-content {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.header-headshot {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: if you want a circle shape */
+    margin-left: 10px; /* Optional: add some space between the image and the icons */
 }
 
 .header-content div {
@@ -20,7 +33,7 @@ header {
 
 .header-content h1 {
     font-family: Arial, sans-serif;
-    font-size: 3.0em; /* Adjust this value to change the size of your name */
+    font-size: 5.0em; /* Adjust this value to change the size of your name */
     margin: 0; /* Removes any default margin */
 }
 
@@ -55,7 +68,7 @@ header {
 }
 
 .custom-icon-size i {
-    font-size: 1.0em; /* Adjust this value to make the icons smaller or larger */
+    font-size: 2.0em; /* Adjust this value to make the icons smaller or larger */
 }
 
 nav ul, footer ul {
@@ -145,31 +158,3 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
-#headshot {
-    max-width: 100%; /* Ensure the image does not overflow its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper alignment */
-    margin: 10px auto; /* Adjust margin for better centering */
-    align-self: left; /* Align image vertically */
-}
-
-/* /* For tablets */
-@media (max-width: 768px) {
-    #headshot {
-        max-width: 150px; /* Smaller size for smaller devices */
-    }
-    nav ul li a {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-    }
-}
-
-/* For mobile phones */
-@media (max-width: 480px) {
-    #headshot {
-        max-width: 100px; /* Even smaller size for mobile phones */
-    }
-    nav ul li a {
-        font-size: 1.3rem; /* Adjust font size for smaller screens */
-    }
-} */
