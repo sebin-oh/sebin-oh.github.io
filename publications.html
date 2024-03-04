@@ -21,15 +21,17 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <br>
     <section>
         <h2>Journal papers</h2>
         <ol>
-            <li>Oh, S., Kim, T., & Song, J. (2023). Bouc–Wen class models considering hysteresis mechanism of RC columns in nonlinear dynamic analysis. <em>International Journal of Non-Linear Mechanics</em>, 148, 104263. <strong>(Listed in the most downloaded articles, last accessed date: <p id="currentDate"></p>)</strong></li>
+            <li>Oh, S., Kim, T., & Song, J. (2023). Bouc–Wen class models considering hysteresis mechanism of RC columns in nonlinear dynamic analysis. <em>International Journal of Non-Linear Mechanics</em>, 148, 104263. <strong>(Listed in the most downloaded articles, last accessed date: <span id="currentDate"></span>)</strong></li>
             <li>(In preparation) Oh, S., Yi, S., & Wang, Z. (2024). Long-range Ising model for regional-scale seismic risk analysis.</li>
             <li>(In preparation) Oh, S., Kim, T. & Song, J. (2024). Deep learning-based modularized loading protocol for parameter estimation of Bouc-Wen class models.</li>
             <li>(In preparation) Oh, S., Wang, Z., & Gonzalez, M. (2024). Pairwise interaction network of financial markets using the Ising model.</li>
         </ol>
     </section>
+    <br>
     <section>
         <h2>Conferences</h2>
         <ol>
@@ -42,6 +44,7 @@
             <li><strong>Oh, S.</strong>, E. Kim, and D. Kim (2019), Establishment of Quantitative Criteria for Stages of Gentrification Using Multivariate Normal Distribution, <em>2019 Intelligent Transport System World Congress</em>, October 20, Singapore</li>
         </ol>
     </section>
+    <br>
     <section>
         <h2>Workshops & Talks</h2>
         <ol>           
@@ -52,5 +55,8 @@
     <footer>
         <p>&copy; 2024 Sebin Oh. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>
