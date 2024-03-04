@@ -149,12 +149,25 @@ h1, h2, p, section h2 {
     color: #333;
 }
 
-section ul, section ul ul {
+section ul {
     font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+section ul ul {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.0;
 }
 
 section ol {
     font-family: 'Georgia', serif; /* Change 'Georgia' to your preferred font */
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 footer {
