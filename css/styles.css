@@ -41,7 +41,7 @@ header {
 }
 
 #news-updates {
-    background-color: #F1F6FF;
+    background-color: #F7F7F7;
     padding: 15px;
     margin-bottom: 20px;
 }
@@ -149,6 +149,11 @@ h1, h2, p, section h2 {
     color: #333;
 }
 
+p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
 section ul li {
     font-family: Arial, sans-serif;
     font-size: 1.3rem;
@@ -160,7 +165,7 @@ section ul li {
 section ul ul li {
     font-family: Arial, sans-serif;
     font-size: 1.1rem;
-    line-height: 1.0;
+    line-height: 1.2;
     list-style-type: disc;
 }
 
@@ -169,11 +174,11 @@ section ul a, section ul ul a {
     color: black;
 }
 
-section ol {
+section ol li {
     font-family: 'Times New Roman', serif; /* Change 'Georgia' to your preferred font */
     font-size: 1.2rem;
     line-height: 1.2;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 section ol a {
