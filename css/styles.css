@@ -55,6 +55,9 @@ header {
 #news-updates .date {
     font-style: italic;
     color: #666;
+    font-size: 1.0rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #news-updates a {
