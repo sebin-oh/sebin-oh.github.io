@@ -60,6 +60,10 @@ header {
     color: #666;
 }
 
+#news-updates a {
+    text-decoration: none;
+}
+
 .social-link {
     color: #01356D; /* Change the icon color to gray */
     text-decoration: none;
