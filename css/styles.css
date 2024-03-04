@@ -9,11 +9,6 @@ header {
     padding-right: 0; /* Adjust padding for better alignment */
 }
 
-/* .header-content {
-    display: flex;
-    align-items: baseline;
-} */
-
 .header-content {
     display: flex;
     align-items: baseline; /* Align items vertically in the center */
@@ -73,11 +68,17 @@ header {
     font-size: 1.0rem;
 }
 
+.carousel-item img {
+    width: 100%;  /* Ensure images stretch to cover the carousel width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .slides {
   display: flex;
   overflow-x: auto;
   overflow-x: auto;
 }
+
 .slides > div {
   display: flex;
   flex-shrink: 0;
