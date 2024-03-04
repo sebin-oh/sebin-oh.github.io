@@ -61,13 +61,13 @@ header {
 }
 
 .social-link {
-/*     color: gray; /* Change the icon color to gray */ */
+    color: #01356D; /* Change the icon color to gray */
     text-decoration: none;
     margin-left: 10px; /* Adds space between the icons and the name */
 }
 
 .custom-icon-size i {
-    font-size: 1.5em; /* Adjust this value to make the icons smaller or larger */
+    font-size: 1.3em; /* Adjust this value to make the icons smaller or larger */
 }
 
 nav ul, footer ul {
