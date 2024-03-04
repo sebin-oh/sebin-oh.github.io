@@ -7,7 +7,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* This will vertically center align items in the header */
 }
 
 .header-content div {
