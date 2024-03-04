@@ -98,7 +98,7 @@ header {
     border-color: #333; /* Change border color on hover */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     /* Adjust header content alignment */
     .header-content {
         flex-direction: column; /* Stack the elements vertically */
@@ -159,11 +159,11 @@ header {
 nav ul, footer ul {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0;
+    margin: 0;
     list-style: none;
     font-weight: bold;
     text-align: left; /* Align the entire navigation to the center */
     display: flex; /* Align nav items in a row by default */
-    margin-right: 10px;
 }
 
 nav ul li, footer ul li {
@@ -173,9 +173,9 @@ nav ul li, footer ul li {
     font-size: 2rem; /* Adjust the font size for navigation links */
 }
 
-nav ul li:first-child {
+/* nav ul li:first-child {
     margin-left: 0; /* Remove margin from the first navigation item */
-}
+} */
 
 section ul li {
     font-size: 1.3rem;
