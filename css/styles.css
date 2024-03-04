@@ -27,7 +27,6 @@ header {
 .header-content {
     display: flex;
     align-items: baseline;
-    flex-direction: column; /* Aligns the content and social links vertically */
 }
 
 #news-updates {
