@@ -149,16 +149,15 @@ h1, h2, p, section h2 {
     color: #333;
 }
 
-section ul {
+section ul li {
     font-family: Arial, sans-serif;
     font-size: 1.3rem;
     line-height: 1.2;
     margin-top: 5px;
     margin-bottom: 10px;
-    list-style-type: none;
 }
 
-section ul ul {
+section ul ul li {
     font-family: Arial, sans-serif;
     font-size: 1.1rem;
     line-height: 1.0;
@@ -168,13 +167,13 @@ section ul ul {
 section ul a, section ul ul a {
     text-decoration: none;
     color: black;
-}    
+}
 
 section ol {
     font-family: 'Times New Roman', serif; /* Change 'Georgia' to your preferred font */
     font-size: 1.2rem;
     line-height: 1.2;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 section ol a {
