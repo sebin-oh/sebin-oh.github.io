@@ -51,6 +51,12 @@ header {
     color: #333; /* Dark grey color */
 }
 
+#news-updates h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.3em; /* Adjust font size for better readability */
+    margin-bottom: 10px;
+}
+
 #news-updates article {
     margin-bottom: 15px;
 }
@@ -58,6 +64,7 @@ header {
 #news-updates .date {
     font-style: italic;
     color: #666;
+    margin-bottom: 10px;
 }
 
 #news-updates a {
