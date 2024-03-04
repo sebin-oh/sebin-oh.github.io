@@ -17,7 +17,6 @@ header {
 .header-content {
     display: flex;
     align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Distribute space between items */
 }
 
 .header-headshot {
