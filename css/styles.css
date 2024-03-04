@@ -36,6 +36,15 @@ header {
     text-decoration: none; /* Removes underline from the link */
 }
 
+#welcomephoto {
+    max-width: 600px; /* Limit the image width to 600px or less */
+    width: 100%; /* Make it responsive: scale according to its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #news-updates {
     background-color: #f9f9f9; /* Light grey background */
     padding: 20px;
@@ -99,7 +108,7 @@ header {
     /* Adjust navigation menu for mobile */
     nav ul {
         flex-direction: column; /* Stack nav items vertically */
-        align-items: center; /* Center-align nav items */
+        align-items: left; /* Center-align nav items */
     }
 
     nav ul li {
@@ -109,9 +118,12 @@ header {
     .image-gallery {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    #welcomephoto {
+        max-width: 90%; /* Allow the image to occupy more width on smaller screens */
+    }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     /* Adjust header content alignment */
     .header-content {
         flex-direction: column; /* Stack the elements vertically */
@@ -121,17 +133,18 @@ header {
     /* Adjust navigation menu for mobile */
     nav ul {
         flex-direction: column; /* Stack nav items vertically */
-        align-items: center; /* Center-align nav items */
+        align-items: left; /* Center-align nav items */
     }
 
     nav ul li {
         margin-right: 0; /* Remove horizontal margin */
         margin-bottom: 10px; /* Add some space between items */
     }
+    
     .image-gallery {
         grid-template-columns: 1fr; /* Stack images vertically on small screens */
     }
-}
+} */
 
 .social-link {
     color: #01356D; /* Change the icon color to gray */
