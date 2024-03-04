@@ -4,6 +4,17 @@ body {
     max-width: 1500px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
+.header-content {
+    display: flex;
+    align-items: baseline;
+}
+
+.social-link {
+    color: gray; /* Change the icon color to gray */
+    text-decoration: none;
+    margin-left: 10px; /* Adds space between the icons and the name */
+}
+
 nav ul, footer ul {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0;
@@ -68,11 +79,6 @@ section ul ul li a {
 section ol li a {
     text-decoration: none;
     color: #030303;
-}
-
-.social-link {
-    color: #999; 
-    text-decoration: none; /* To remove the underline */
 }
 
 a:hover {
