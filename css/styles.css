@@ -82,12 +82,12 @@ header {
     border: 2px solid #ddd; /* Add a border around each image */
     border-radius: 4px; /* Optional: rounds the corners */
     transition: transform 0.2s; /* Animation on hover */
-}
+} */
 
 .image-gallery img:hover {
     transform: scale(1.05); /* Slightly increase the size on hover */
     border-color: #333; /* Change border color on hover */
-} */
+}
 
 @media (max-width: 800px) {
     .image-gallery {
