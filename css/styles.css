@@ -41,8 +41,8 @@ header {
 }
 
 #news-updates {
-    background-color: #E1EBFF;
-    padding: 20px;
+    background-color: #F1F6FF;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
@@ -147,6 +147,14 @@ a:hover {
 h1, h2, p, section h2 {
     font-family: Arial, sans-serif;
     color: #333;
+}
+
+section ul, section ul ul {
+    font-family: Arial, sans-serif;
+}
+
+section ol {
+    font-family: 'Georgia', serif; /* Change 'Georgia' to your preferred font */
 }
 
 footer {
