@@ -1,7 +1,7 @@
 body {
     margin: 60px auto; /* Adjust margin for better centering */
     width: 90%; /* Adjust width for better responsiveness */
-    max-width: 1200px; /* Add max-width to prevent content from stretching too wide on larger screens */
+    max-width: 900px; /* Add max-width to prevent content from stretching too wide on larger screens */
 }
 
 header {
