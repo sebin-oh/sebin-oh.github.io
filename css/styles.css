@@ -81,7 +81,7 @@ header {
 }
 
 .image-gallery img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border: 2px solid #ddd;
     border-radius: 4px;
