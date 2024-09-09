@@ -69,6 +69,8 @@ header {
 }
 
 #news-updates p {
+    text-align: justify;
+    text-justify: inter-word; /* Optional: Better justification for mixed text */
     font-size: 1.1rem;
 }
 
