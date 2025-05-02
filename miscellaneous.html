@@ -58,19 +58,19 @@
         
             Positive semi-definiteness is essentially a notion of "positiveness" for matrices.<br><br>
             
-            Consider a general square matrix \( A \).<br>
-            We can decompose \( A \) into symmetric and skew-symmetric parts: \( A = A_{\text{sym}} + A_{\text{asym}} \) (and if \( A \) is symmetric, then \( A = A_{\text{sym}} \)).<br>
-            Then, \(A\) defines a quadratic form. That is, the expression \( f(x) = x^\top A x \) = x^\top A_{\text{sym}} x \) represents a paraboloid.<br>
+            Consider a general symmetry matrix \( A \). (non-symmetric matrices can also be considered, but the discussion of PSD becomes more relevant for symemtry matrices.)<br>
+            \(A\) defines a quadratic form, i.e., the expression \( f(x) = x^\top A x \) represents a paraboloid.<br>
             If \( x^\top A x \geq 0 \) for all \( x \), it means the paraboloid lies entirely on or above the zero level.<br><br>
             
-            Note that the Hessian of \( f(x) \) is \( \nabla^2 f(x) = 2A_{\text{sym}} \).<br><br>
+            Note that the Hessian of \( f(x) \) is \( \nabla^2 f(x) = 2A \).<br><br>
             
             That being said, PSD is a sufficient and (under symmetry) also a necessary condition for the convexity of a quadratic form:
+            <div style="font-size: 90%;">
             <ul>
               <li>\( A \text{ is PSD} \Rightarrow x^\top A x \text{ is convex} \)</li>
               <li>\( x^\top A x \text{ is convex} \Rightarrow A \text{ is PSD} \quad \text{(if } A \text{ is symmetric)} \)</li>
             </ul>
-
+            <\div>
         </p>
     <br>
         
