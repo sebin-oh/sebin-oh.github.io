@@ -41,37 +41,38 @@
             <img src="images/miscellaneous/1fe8cdd2-5949-4adb-bd96-e0a5c2654d42.png" alt="cltandamxent" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
         </div>
         <p>
-          Infinite-width, randomly initialized neural networks (NNs) are equivalent to Gaussian Processes (GPs).<br>
-          This equivalence is valid for <b>untrained</b> NNs.<br><br>
-        
-          This result follows from the Central Limit Theorem.<br><br>
-        
-          The width, depth, activation function, initial weight and bias variance, and other architectural choices determine the kernel of the equivalent GP.<br><br>
-        
-          Why does it matter if the equivalence holds only for untrained NNs?
+            Infinite-width, randomly initialized neural networks (NNs) are equivalent to Gaussian Processes (GPs).<br>
+            This equivalence is valid for <b>untrained</b> NNs.<br><br>
+            
+            This result follows from the Central Limit Theorem.<br><br>
+            
+            The width, depth, activation function, initial weight and bias variance, and other architectural choices determine the kernel of the equivalent GP.<br><br>
+            
+            Why does it matter if the equivalence holds only for untrained NNs?
         </p>
         <ul>
-          <li>It helps us understand whether your NN model is likely to train well for a given problem.</li>
-          <li>For example, it reveals what kinds of functions your NN model is biased toward, how architecture affects that bias, and how likely the model is to learn effectively.</li>
+            <li>It helps us understand whether your NN model is likely to train well for a given problem.</li>
+            <li>For example, it reveals what kinds of functions your NN model is biased toward, how architecture affects that bias, and how likely the model is to learn effectively.</li>
         </ul>
         
         <p>
-          <b>(Advanced)</b> <b>Critical phase in NN training:</b> There is a <i>critical line</i> (called the "edge of chaos" [1]) in the space of hyperparameters (weight variance and bias variance) where:
+            <br>
+            <b>(Advanced)</b> <b>Critical phase in NN training:</b> There is a <i>critical line</i> (called the "edge of chaos" [1]) in the space of hyperparameters (weight variance and bias variance) where:
         </p>
         <ul>
-          <li>The kernel retains meaningful distinctions between inputs across many layers.</li>
-          <li>The network can express complex functions and remain trainable.</li>
-          <li>Only when the GP kernel does not degenerate—as it does at the edge of chaos—can very deep networks train effectively.</li>
+            <li>The kernel retains meaningful distinctions between inputs across many layers.</li>
+            <li>The network can express complex functions and remain trainable.</li>
+            <li>Only when the GP kernel does not degenerate—as it does at the edge of chaos—can very deep networks train effectively.</li>
         </ul>
         
         <p>The degeneration of the kernel has two modes:</p>
         <ul>
-          <li><i>Ordered phase:</i> All outputs become similar regardless of input; the kernel tends to a constant high correlation. The model becomes insensitive to input variations.</li>
-          <li><i>Chaotic phase:</i> Outputs for different inputs become uncorrelated; the kernel tends to zero for \( x \neq x' \). Training becomes unstable, and gradients explode or vanish.</li>
+            <li><i>Ordered phase:</i> All outputs become similar regardless of input; the kernel tends to a constant high correlation. The model becomes insensitive to input variations.</li>
+            <li><i>Chaotic phase:</i> Outputs for different inputs become uncorrelated; the kernel tends to zero for \( x \neq x' \). Training becomes unstable, and gradients explode or vanish.</li>
         </ul>
         
-        <div style="font-size: 60%; color: gray;">
-          [1] Poole, B., Lahiri, S., Raghu, M., Sohl-Dickstein, J., & Ganguli, S. (2016). Exponential expressivity in deep neural networks through transient chaos. <i>Advances in Neural Information Processing Systems</i>, 29.
+        <div style="font-size: 100%; color: gray;">
+            [1] Poole, B., Lahiri, S., Raghu, M., Sohl-Dickstein, J., & Ganguli, S. (2016). Exponential expressivity in deep neural networks through transient chaos. <i>Advances in Neural Information Processing Systems</i>, 29.
         </div>
 
         </p>
