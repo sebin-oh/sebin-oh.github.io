@@ -53,20 +53,22 @@
         <div class="image-gallery">
             <img src="images/miscellaneous/psd.png" alt="psd" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
         </div>
-        <p>I used to think about the positive semi-definiteness (PSD) of matrices in terms of the convexity of the problem associated with the matrix, but that’s not a concise understanding.</p><br>
+        <p>
+            I used to think about the positive semi-definiteness (PSD) of matrices in terms of the convexity of the problem associated with the matrix, but that’s not a concise understanding.<br>
         
-        <p>Positive semi-definiteness is essentially a notion of "positiveness" for matrices.</p><br>
-        
-        <p>Consider a general square matrix \( A \).</p>
-        <p>We can decompose \( A \) into symmetric and skew-symmetric parts: \( A = A_{\text{sym}} + A_{\text{asym}} \) (and if \( A \) is symmetric, then \( A = A_{\text{sym}} \)).</p>
-        <p>The symmetric part \( A_{\text{sym}} \) defines a quadratic form. That is, the expression \( f(x) = x^\top A_{\text{sym}} x \) represents a paraboloid.</p>
-        <p>If \( x^\top A_{\text{sym}} x \geq 0 \) for all \( x \), it means the paraboloid lies entirely on or above the zero level, making the paraboloid essentially convex.</p><br>
-        
-        <p>Note that the Hessian of \( f(x) \) is \( \nabla^2 f(x) = 2A_{\text{sym}} \).</p><br>
-        
-        <p>That being said, PSD is a sufficient—and, under symmetry, also a necessary—condition for the convexity of a quadratic form:</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;\( A \text{ is PSD} \Rightarrow x^\top A x \text{ is convex} \)<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;\( x^\top A x \text{ is convex} \Rightarrow A \text{ is PSD (if } A \text{ is symmetric)} \)</p>
+            Positive semi-definiteness is essentially a notion of "positiveness" for matrices.<br>
+            
+            Consider a general square matrix \( A \).
+            We can decompose \( A \) into symmetric and skew-symmetric parts: \( A = A_{\text{sym}} + A_{\text{asym}} \) (and if \( A \) is symmetric, then \( A = A_{\text{sym}} \)).
+            The symmetric part \( A_{\text{sym}} \) defines a quadratic form. That is, the expression \( f(x) = x^\top A_{\text{sym}} x \) represents a paraboloid.
+            If \( x^\top A_{\text{sym}} x \geq 0 \) for all \( x \), it means the paraboloid lies entirely on or above the zero level, making the paraboloid essentially convex.<br>
+            
+            Note that the Hessian of \( f(x) \) is \( \nabla^2 f(x) = 2A_{\text{sym}} \).<br>
+            
+            That being said, PSD is a sufficient—and, under symmetry, also a necessary—condition for the convexity of a quadratic form:
+            &nbsp;&nbsp;&nbsp;&nbsp;\( A \text{ is PSD} \Rightarrow x^\top A x \text{ is convex} \)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;\( x^\top A x \text{ is convex} \Rightarrow A \text{ is PSD (if } A \text{ is symmetric)} \)
+        </p>
     <br>
         
     <footer>
