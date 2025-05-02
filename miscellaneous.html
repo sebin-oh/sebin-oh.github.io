@@ -54,14 +54,16 @@
             
             Positive semi-definiteness is essentially a notion of "positiveness" for matrices.<br><br>
             
-            Consider a general matrix A.<br>
-            Matrix A defines a quadratic form.<br>
-            The expression x<sup>T</sup> A x represents a paraboloid.<br>
-            If x<sup>T</sup> A x &ge; 0 for all x, it means the paraboloid lies entirely on or above the zero level.<br><br>
+            Consider a general square matrix A.<br>
+            Decompose A into symmetric and non-symmetric parts: A=A_{sym}+A_{asym} (if A is symmetric, A=A_{sym}).<br>
+            Matrix A_{sym} defines a quadratic form, i.e., the expression f(x)=x<sup>T</sup> A_{sym} x represents a paraboloid.<br>
+            If x<sup>T</sup> A_{sym} x &ge; 0 for all x, it means the paraboloid lies entirely on or above the zero level.<br><br>
 
-            PSD is a sufficient condition for the convexity of the quadratic form.<br>
-            (indentation) PSD &rarr; Convex<br>
-            (indentation) PSD &larr; Convex<br>
+            Note that the Hessian of f(x) is 2A_{sym}, i.e., ∇^2 f(x)=2A_{sym}. <br><br>
+
+            That being said, PSD is a sufficient and (under symmetry) necessary condition for the convexity of a quadratic form.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;A is PSD &rarr; x<sup>T</sup>A x is convex<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;x<sup>T</sup>A x is convex &rarr; A is PSD (if A is symmetric)<br>
         </p>
     <br>
         
