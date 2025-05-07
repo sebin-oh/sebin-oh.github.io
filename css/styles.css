@@ -178,10 +178,23 @@ footer {
 /* Section Title Styling */
 .section-title {
     display: inline-block;
-    background-color: #e6f2ff;
-    color: #003366;
+/*     background-color: #e6f2ff;
+    color: #003366; */
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    padding: 4px 10px;
+    border-left: 5px solid #007ACC;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    display: inline-block;
+/*     background-color: #e6f2ff;
+    color: #003366; */
+    font-weight: bold;
+    font-size: 1.5rem;
     padding: 4px 10px;
     border-left: 5px solid #007ACC;
     margin-top: 1rem;
