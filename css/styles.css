@@ -10,6 +10,11 @@ p, ul, li {
     font-family: 'Inter', sans-serif;
 }
 
+ul.compact-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
 p {
     text-align: justify;
     text-justify: inter-word;
@@ -106,6 +111,14 @@ header {
 .image-gallery img:hover {
     transform: scale(1.1);
     border-color: #333;
+}
+
+.image-centered img {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Navigation and Footer */
@@ -215,6 +228,11 @@ footer {
     font-family: 'Inter', sans-serif;
 }
 
+.reference {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 1rem;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
