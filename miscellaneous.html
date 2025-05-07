@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebin's personal blog</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1><a href="index.html" style="color: black; text-decoration: none;">Sebin Oh</a></h1>
-<!--             <a href="https://github.com/sebin-oh" class="social-link custom-icon-size" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sebin-oh-56b991231/" class="social-link custom-icon-size" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:sebin.oh@berkeley.edu" class="social-link custom-icon-size"><i class="fa-solid fa-envelope"></i></a> -->
-            <img src="Professional Headshot_circle.jpg" alt="Sebin's Headshot" class="header-headshot">
+            <h1><a href="index.html">Sebin Oh</a></h1>
+            <img src="Professional Headshot_circle.jpg" alt="Sebin's Headshot" class="header-headshot" />
         </div>
         <p>PhD Candidate in Civil and Environmental Engineering at UC Berkeley</p>
     </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="news.html">News</a></li>
-            <li><a href="publications.html">Publications</a></li>         
+            <li><a href="publications.html">Publications</a></li>
             <li><a href="miscellaneous.html">Miscellaneous</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <br>
     <section id="Matrix-decomposition">
         <span class="section-title">Matrix Decomposition</span>
-        <div class="image-gallery">
-            <img src="images/miscellaneous/CLTandMaxEnt.png" alt="cltandamxent" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+        <div class="image-gallery image-centered">
+            <img src="images/miscellaneous/CLTandMaxEnt.png" alt="QR and LU decomposition illustration" />
         </div>
         <div class="miscellaneous">
             <p class="section-subtitle">1. QR Decomposition \( A = QR \)</p>
@@ -50,7 +45,7 @@
                 <li>Commonly used for: Solving least squares problems</li>
                 <li>Conceptually a matrix version of the Gram–Schmidt process</li>
             </ul>
-    
+
             <p class="section-subtitle">2. LU Decomposition \( A = LU \)</p>
             <ul>
                 <li>\( L \): Lower triangular matrix</li>
@@ -61,103 +56,73 @@
         </div>
     </section>
 
-    <br>
     <section id="NNandGP">
         <span class="section-title">Equivalence of Neural Networks and Gaussian Process</span>
-        <div class="image-gallery">
-            <img src="images/miscellaneous/NNandGP.png" alt="NNandGP" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+        <div class="image-gallery image-centered">
+            <img src="images/miscellaneous/NNandGP.png" alt="NN and GP equivalence illustration" />
         </div>
         <p>
-            Neural networks (NNs) with infinite width and random initialization are equivalent to Gaussian processes (GPs) [1].<br>
-            This equivalence is valid for <b>untrained</b> NNs.<br><br>
-            
-            This result follows from the Central Limit Theorem.<br><br>
-            
-            The equivalent GP kernel is determined by architectural choices such as width, depth, activation function, and the variances of initial weights and biases.<br><br>
-            
-            Why does it matter if the equivalence holds only for untrained NNs?
+            Neural networks (NNs) with infinite width and random initialization are equivalent to Gaussian processes (GPs) [1].
+            This equivalence is valid for <b>untrained</b> NNs. This result follows from the Central Limit Theorem.
+            The equivalent GP kernel is determined by architectural choices such as width, depth, activation function,
+            and the variances of initial weights and biases.
         </p>
-        <div style="font-size: 80%;">
-        <ul>
+        <ul class="compact-list">
             <li>It helps us understand whether your NN model is likely to train well for a given problem.</li>
             <li>For example, it reveals what kinds of functions your NN model is biased toward, how architecture affects that bias, and how likely the model is to learn effectively.</li>
         </ul>
-        </div>
-        
-        <p>
-            <br>
-            <b>(Advanced)</b> <b>Critical phase in NN training:</b> There is a <i>critical line</i> (called the "edge of chaos" [2]) in the space of hyperparameters (weight variance and bias variance) where:
-        </p>
-        <div style="font-size: 80%;">
-        <ul>
+
+        <p><b>(Advanced)</b> <b>Critical phase in NN training:</b> There is a <i>critical line</i> (called the "edge of chaos" [2]) in the space of hyperparameters where:</p>
+        <ul class="compact-list">
             <li>The kernel retains meaningful distinctions between inputs across many layers.</li>
             <li>The network can express complex functions and remain trainable.</li>
             <li>Only when the GP kernel does not degenerate—as it does at the edge of chaos—can very deep networks train effectively.</li>
         </ul>
-        </div>
-        
-        <p>The degeneration of the kernel has two modes:</p>
-        <div style="font-size: 80%;">
-        <ul>
-            <li><i>Ordered phase:</i> All outputs become similar regardless of input; the kernel tends to a constant high correlation. The model becomes insensitive to input variations.</li>
-            <li><i>Disordered phase:</i> Outputs for different inputs become uncorrelated; the kernel tends to zero for \( x \neq x' \). Training becomes unstable, and gradients explode or vanish.</li>
-        </ul>
-        </div>
-        
-        <div style="font-size: 100%; color: gray;">
-            [1] Lee, J., Bahri, Y., Novak, R., Schoenholz, S. S., Pennington, J., & Sohl-Dickstein, J. (2017). Deep neural networks as gaussian processes. arXiv preprint arXiv:1711.00165.<br>
-            [2] Poole, B., Lahiri, S., Raghu, M., Sohl-Dickstein, J., & Ganguli, S. (2016). Exponential expressivity in deep neural networks through transient chaos. <i>Advances in Neural Information Processing Systems</i>, 29.
-        </div>
 
-        </p>
-    <br>
+        <p>The degeneration of the kernel has two modes:</p>
+        <ul class="compact-list">
+            <li><i>Ordered phase:</i> Outputs converge regardless of input; the kernel tends to a high constant. The model becomes insensitive to input variations.</li>
+            <li><i>Disordered phase:</i> Outputs become uncorrelated; the kernel tends to zero for \( x \neq x' \). Training becomes unstable as gradients vanish or explode.</li>
+        </ul>
+
+        <div class="reference">
+            [1] Lee, J., Bahri, Y., Novak, R., Schoenholz, S. S., Pennington, J., & Sohl-Dickstein, J. (2017). Deep neural networks as Gaussian processes. arXiv:1711.00165<br>
+            [2] Poole, B., Lahiri, S., Raghu, M., Sohl-Dickstein, J., & Ganguli, S. (2016). Exponential expressivity in deep neural networks through transient chaos. NeurIPS 29.
+        </div>
     </section>
 
-    <br>
     <section id="CLTandMaxEnt">
         <span class="section-title">Central Limit Theorem and Maximum Entropy Principle</span>
-        <div class="image-gallery">
-            <img src="images/miscellaneous/CLTandMaxEnt.png" alt="cltandamxent" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+        <div class="image-gallery image-centered">
+            <img src="images/miscellaneous/CLTandMaxEnt.png" alt="CLT and MaxEnt illustration" />
         </div>
         <p>
-            The Central Limit Theorem (CLT) states that aggregating many (nearly independent) random variables yields a Gaussian distribution.<br><br>
-            Meanwhile, the Principle of Maximum Entropy states, if the mean and covariance (i.e., statistical information up to second-order central moments) are the only information you have, the most <i>reasonable</i> distribution (least-biased distribution) describing your problem is a Gaussian distribution.<br><br>
-            <ul>
-                <li>The information about your nearly independent randomness that is meaningful and will be preserved at a global perspective is the mean and covariance.</li>
-                <li>Every other detailed information, including higher-order moments, will be washed out at a high-level perspective.</li>
-            </ul>
+            The Central Limit Theorem (CLT) states that aggregating many (nearly independent) random variables yields a Gaussian distribution.
+            Meanwhile, the Principle of Maximum Entropy states that if the mean and covariance (second-order moments) are the only known quantities,
+            the least-biased distribution is Gaussian.
         </p>
-    <br>
+        <ul>
+            <li>The mean and covariance are the only components preserved from the aggregation of randomness.</li>
+            <li>Higher-order details are averaged out and thus lost in the global view.</li>
+        </ul>
     </section>
 
-    <br>
     <section id="psd">
         <span class="section-title">Positive Semi-Definiteness</span>
-        <div class="image-gallery">
-            <img src="images/miscellaneous/psd.png" alt="psd" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+        <div class="image-gallery image-centered">
+            <img src="images/miscellaneous/psd.png" alt="positive semi-definite matrix illustration" />
         </div>
         <p>
-            I used to think about the positive semi-definiteness (PSD) of matrices in terms of the convexity of the problem associated with the matrix, but that’s not a concise understanding.<br><br>
-        
-            Positive semi-definiteness is essentially a notion of "positiveness" for matrices.<br><br>
-            
-            Consider a general symmetry matrix \( A \). (non-symmetric matrices can also be considered, but the discussion of PSD becomes more relevant for symemtry matrices.)<br>
-            \(A\) defines a quadratic form, i.e., the expression \( f(x) = x^\top A x \) represents a paraboloid.<br>
-            If \( x^\top A x \geq 0 \) for all \( x \), it means the paraboloid lies entirely on or above the zero level.<br><br>
-            
-            Note that the Hessian of \( f(x) \) is \( \nabla^2 f(x) = 2A \).<br><br>
-            
-            That being said, PSD is a sufficient and (under symmetry) also a necessary condition for the convexity of a quadratic form:
-            <div style="font-size: 80%;">
-            <ul>
-                <li>\( A \text{ is PSD} \Rightarrow x^\top A x \text{ is convex} \)</li>
-                <li>\( x^\top A x \text{ is convex} \Rightarrow A \text{ is PSD} \quad \text{(if } A \text{ is symmetric)} \)</li>
-            </ul>
-            </div>
+            Positive semi-definiteness (PSD) expresses a form of "positiveness" for matrices. For a symmetric matrix \( A \), the expression
+            \( f(x) = x^\top A x \) defines a quadratic form. If \( f(x) \geq 0 \) for all \( x \), the surface lies entirely on or above the zero level.
         </p>
-    <br>
+        <p>The Hessian of \( f(x) \) is \( \nabla^2 f(x) = 2A \). Thus, for symmetric matrices:</p>
+        <ul>
+            <li>\( A \) is PSD ⟹ \( x^\top A x \) is convex</li>
+            <li>\( x^\top A x \) is convex ⟹ \( A \) is PSD</li>
+        </ul>
     </section>
-        
+
     <footer>
         <p>&copy; 2024 Sebin Oh. All rights reserved.</p>
     </footer>
