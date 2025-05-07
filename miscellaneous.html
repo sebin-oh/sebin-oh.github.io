@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebin's personal blog</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async
@@ -41,12 +40,12 @@
             <img src="images/miscellaneous/NNandGP.png" alt="NNandGP" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
         </div>
         <p>
-            Infinite-width, randomly initialized neural networks (NNs) are equivalent to Gaussian Processes (GPs) [1].<br>
+            Neural networks (NNs) with infinite width and random initialization are equivalent to Gaussian processes (GPs) [1].<br>
             This equivalence is valid for <b>untrained</b> NNs.<br><br>
             
             This result follows from the Central Limit Theorem.<br><br>
             
-            The width, depth, activation function, initial weight and bias variance, and other architectural choices determine the kernel of the equivalent GP.<br><br>
+            The equivalent GP kernel is determined by architectural choices such as width, depth, activation function, and the variances of initial weights and biases.<br><br>
             
             Why does it matter if the equivalence holds only for untrained NNs?
         </p>
@@ -84,6 +83,7 @@
 
         </p>
     <br>
+    </section>
 
     <br>
     <section id="CLTandMaxEnt">
@@ -92,14 +92,15 @@
             <img src="images/miscellaneous/CLTandMaxEnt.png" alt="cltandamxent" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;">
         </div>
         <p>
-            Central Limit Theorem (CLT) says, if you aggregate a bunch of (nearly independent) randomness, you'll see a Gaussian distribution.<br><br>
-            Meanwhile, the Principle of Maximum Entropy says, if the mean and covariance (i.e., statistical information up to second-order central moments) are the only information you have, the most <i>reasonable</i> distribution (least-biased distribution) describing your problem is a Gaussian distribution.<br><br>
+            The Central Limit Theorem (CLT) states that aggregating many (nearly independent) random variables yields a Gaussian distribution.<br><br>
+            Meanwhile, the Principle of Maximum Entropy states, if the mean and covariance (i.e., statistical information up to second-order central moments) are the only information you have, the most <i>reasonable</i> distribution (least-biased distribution) describing your problem is a Gaussian distribution.<br><br>
             <ul>
                 <li>The information about your nearly independent randomness that is meaningful and will be preserved at a global perspective is the mean and covariance.</li>
                 <li>Every other detailed information, including higher-order moments, will be washed out at a high-level perspective.</li>
             </ul>
         </p>
     <br>
+    </section>
 
     <br>
     <section id="psd">
@@ -127,6 +128,7 @@
             </div>
         </p>
     <br>
+    </section>
         
     <footer>
         <p>&copy; 2024 Sebin Oh. All rights reserved.</p>
